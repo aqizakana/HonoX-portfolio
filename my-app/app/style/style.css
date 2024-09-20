@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #FF8343;
+}
+
+
+.TITLE {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Oswald"
+}
+
+h1 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    color: #4158A6;
+}
+
+h2 {
+    font-family: "Railway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+footer {
+    text-align: center;
+    font-family: Raleway, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    width: 100%;
+    margin: 0;
+    /* footerのマージンをリセット */
+    color: #F1DEC6;
+    background: #4158A6;
+    border-bottom: #4158A6 solid;
+    position: fixed;
+    /* footerを画面に固定 */
+    bottom: 0;
+    /* footerを画面下端に配置 */
+    left: 0;
+    /* footerを画面左端に配置 */
+    width: 100%;
+    /* footerの幅を画面全体にする */
+}
+
+
+.OGImage {
+    display: block;
+    margin: 0 auto;
+    /* 左右のマージンをautoにすることで中央寄せ */
+    rotate: 0deg;
+    width: 20rem;
+
+    height: auto;
+    transition: filter 0.9ms ease-in-out;
+    /* ホバー時の変化を滑らかに */
+}
+
+.OGImage:hover {}
+
+label {
+    font-family: "Raleway", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #F1DEC6;
+
+}
+
+p {
+    font-family: "Raleway";
+
+
+}
+
+a {
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #4158A6;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #F5F5F5;
+    opacity: 0.0;
+}
+
+.line::before {
+    margin-bottom: 10px;
+}
+
+.line::after {
+    margin-top: 10px;
+}
+
+.diagonal-line {
+    background-image: linear-gradient(to bottom right, transparent, transparent 49%, #F5F5F5 50%, #F5F5F5 51%, transparent 52%, transparent);
+    width: 100px;
+    height: 50px;
+}
+
+.hovering {
+    text-align: center;
+    font-family: "Oswald";
+    font-style: initial;
+    font-weight: 500;
+    margin: auto;
+    color: #4158A6;
+    animation: hover-animation 2s ease-in-out infinite;
+    /* アニメーションの設定 */
+}
+
+@keyframes hover-animation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* 初期位置と最終位置 */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* 中間地点での位置 (10px上に移動) */
+    }
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    /* 左右のマージンをautoにすることで中央寄せ */
+    rotate: 0deg;
+    width: 20rem;
+    height: auto;
+    transition: filter 0.9ms ease-in-out;
+    /* ホバー時の変化を滑らかに */
+}
+
+.card {
+    border: 1px solid #F1DEC6;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 50%;
+
+    background-color: #F1DEC6;
+    display: flex;
+    flex-direction: column;
+    /* Adjust for vertical alignment of content */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.card li {
+    list-style: none;
+    /* Move list-style removal to target list items */
+}
+
+.card a {
+    text-decoration: none;
+    color: #4158A6;
+    display: flex;
+    /* Flexbox to enable alignment */
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+    /* Add smooth transition for hover */
+}
+
+.card a:hover {
+    color: #2C3E50;
+    /* Change link color on hover */
+    font-weight: bold;
+}
